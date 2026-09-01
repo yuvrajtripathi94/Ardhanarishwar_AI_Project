@@ -1,0 +1,46 @@
+TRANSLATIONS = {
+    "en": {
+        "title": "✦ Ardhanarishwar AI",
+        "caption": "A Global AI-First, Human-Backed Platform — Career Growth for Skilled & Unskilled Candidates + Real-World Problem Solving for Businesses",
+        "workspace": "Workspace",
+        "assistant_mode": "Assistant mode",
+        "candidate": "Candidate",
+        "business": "Business",
+        "candidate_type": "Candidate type",
+        "skilled": "Skilled",
+        "unskilled": "Unskilled",
+        "your_name": "Your name (demo)",
+        "modules": "Modules",
+        "tab_ai_assistant": "AI Assistant",
+        "tab_resume": "Resume Analyzer",
+        "tab_interview": "Interview Lab",
+        "tab_knowledge": "Knowledge Base",
+        "tab_admin": "Admin & Escalations",
+        "chat_placeholder": "Ask about career, jobs, resume, interviews, hiring, training or business...",
+        "mic_caption": "🎤 tap to speak, or type — both use the same local AI (local Whisper STT, no cloud speech API).",
+    },
+    "hi": {
+        "title": "✦ अर्धनारीश्वर AI",
+        "caption": "एक वैश्विक AI-फर्स्ट, इंसानों-समर्थित प्लेटफ़ॉर्म — कुशल और अकुशल उम्मीदवारों के लिए करियर ग्रोथ + व्यवसायों के लिए वास्तविक समस्या समाधान",
+        "workspace": "वर्कस्पेस",
+        "assistant_mode": "असिस्टेंट मोड",
+        "candidate": "उम्मीदवार",
+        "business": "व्यवसाय",
+        "candidate_type": "उम्मीदवार का प्रकार",
+        "skilled": "कुशल",
+        "unskilled": "अकुशल",
+        "your_name": "आपका नाम (डेमो)",
+        "modules": "मॉड्यूल",
+        "tab_ai_assistant": "AI असिस्टेंट",
+        "tab_resume": "रिज़्यूमे विश्लेषक",
+        "tab_interview": "इंटरव्यू लैब",
+        "tab_knowledge": "नॉलेज बेस",
+        "tab_admin": "एडमिन और एस्केलेशन",
+        "chat_placeholder": "करियर, नौकरी, रिज़्यूमे, इंटरव्यू, भर्ती, प्रशिक्षण या व्यवसाय के बारे में पूछें...",
+        "mic_caption": "🎤 बोलने के लिए टैप करें, या टाइप करें — दोनों एक ही लोकल AI का उपयोग करते हैं (लोकल Whisper STT, कोई क्लाउड स्पीच API नहीं)।",
+    },
+}
+
+
+def t(key, lang="en"):
+    return TRANSLATIONS.get(lang, TRANSLATIONS["en"]).get(key, TRANSLATIONS["en"].get(key, key))
